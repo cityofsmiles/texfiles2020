@@ -1,0 +1,166 @@
+\documentclass[14pt]{beamer}
+\input{../../../beamer-preamble-2020}
+\usetheme{default}
+\usecolortheme{seahorse}
+
+\title[] {Linear Inequalities in Two Variables}
+\author{Jonathan R. Bacolod}
+\institute[SHS]{Sauyo High School}
+\date{}
+
+\begin{document}
+	\frame{\titlepage}
+	
+	\begin{frame}
+		\frametitle{What is a Linear Inequality in Two Variables?}
+		It is an inequality which can be written in any one of the following forms: 
+		
+		\begin{center}
+			\noindent\begin{minipage}{\textwidth}
+				\begin{tabularx}{\textwidth}{YY}
+					$Ax+By<C$ & $Ax+By \leq C$ \\
+					$Ax+By>C$ & $Ax+By \geq C$ \\
+				\end{tabularx} 
+			\end{minipage}
+		\end{center} 
+		
+		where $A$, $B$,  and $C$ are any real numbers. 
+	\end{frame}
+
+    \begin{frame}
+    	\frametitle{Example}
+    	Tell which of the following is a linear inequality in two variables. Write YES or NO.
+    	\begin{enumerate}
+    		\begin{multicols}{2}
+    		\item \pause $ 2x \leq 4 + y $ \pause \minivoid \textbf{YES}
+    		\item \pause $ y > 5x $ \pause \minivoid \textbf{YES}
+    		\item \pause $ 2x - 1 \geq y $ \pause \minivoid \textbf{YES}
+    		\item \pause $ \dfrac{1}{4}x < y $ \pause \minivoid \textbf{YES}
+    		\item \pause $ x = 2y $ \pause \minivoid \textbf{NO}
+    		\item \pause $ x \geq 1 $ \pause \minivoid \textbf{NO}
+    		\item \pause $ x < 2y + 5 $ \pause \minivoid \textbf{YES}
+    		\item \pause $ 9(x-2) < 15 $ \pause \minivoid \textbf{NO}
+    		\item \pause $ y \leq -6x - 4 $ \pause \minivoid \textbf{YES}
+    		\item \pause $ 2x + y < 8 $ \pause \minivoid \textbf{YES}
+    	\end{multicols}
+    	\end{enumerate}
+     \end{frame}
+ 
+    \begin{frame}
+    	\frametitle{What are the Solutions of a Linear Inequality?}
+    	The solution of an inequality in two variables are the ordered pairs of numbers that make the inequality true. 
+    \end{frame}
+
+\begin{frame}
+	\frametitle{How to Determine Whether an Ordered Pair is a Solution to a Linear Inequality?}
+	\begin{enumerate}
+		\item Substitute the values for $ x $ and $ y $.
+		\item \pause Simplify the inequality.
+		\item \pause Check whether the resulting inequality statement is true or false.
+	\end{enumerate}
+\end{frame}
+
+    
+    \begin{frame}
+    	\frametitle{Example 1 \\
+    	\only<2-4>{\small Step 1: Substitute the values for $ x $ and $ y $.}
+    	\only<5-8>{\small Step 2: Simplify the inequality.}
+    	\only<9>{\small Step 3: Check whether the resulting inequality statement is true or false.}}
+    
+    	Is $ (1, 1) $ a solution to $ y \geq 2x - 1 $?
+    	
+    	\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{cccccc}
+            \pause Let: $ x = 1 $, & $ y = 1 $  \\
+    		
+    		\pause $ y \geq 2x - 1 $  &  \\
+    		
+    		\pause $ 1 \geq 2(1) - 1 $ & \pause Substitution Property \\
+    		
+    		\pause $ 1 \geq 2 - 1 $ & \pause Simplification \\
+    		
+    		\pause $ 1 \geq 1 $ & \pause Simplification \\
+    		& \\
+    	\end{TAB}
+    	
+    	\pause $ \therefore $ since the resulting inequality is true, $ (1, 1) $ \textbf{is a solution} to $ y \geq 2x - 1 $.
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 2 \\
+    		\only<2-4>{\small Step 1: Substitute the values for $ x $ and $ y $.}
+    		\only<5-8>{\small Step 2: Simplify the inequality.}
+    		\only<9>{\small Step 3: Check whether the resulting inequality statement is true or false.}}
+    	
+    	Is $ (4, -1) $ a solution to $ x + 3y \leq 8 $?
+    	
+    	\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{cccccc}
+    		\pause Let: $ x = 4 $, & $ y = -1 $  \\
+    		
+    		\pause $ x + 3y \leq 8 $  &  \\
+    		
+    		\pause $ 4 + 3(-1) \leq 8 $ & \pause Substitution Property \\
+    		
+    		\pause $ 4 - 3 \leq 8 $ & \pause Simplification \\
+    		
+    		\pause $ 1 \leq 8 $ & \pause Simplification \\
+    		& \\
+    	\end{TAB}
+    	
+    	\pause $ \therefore $ since the resulting inequality is true, $ (4, -1) $ \textbf{is a solution} to $ x + 3y \leq 8 $.
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 3 \\
+    		\only<2-4>{\small Step 1: Substitute the values for $ x $ and $ y $.}
+    		\only<5-8>{\small Step 2: Simplify the inequality.}
+    		\only<9>{\small Step 3: Check whether the resulting inequality statement is true or false.}}
+    	
+    	Is $ (0, 0) $ a solution to $ y < 4x - 5 $?
+    	
+    	\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{cccccc}
+    		\pause Let: $ x = 0 $, & $ y = 0 $  \\
+    		
+    		\pause $ y < 4x - 5 $  &  \\
+    		
+    		\pause $ 0 < 4(0) - 5 $ & \pause Substitution Property \\
+    		
+    		\pause $ 0 < 0 - 5 $ & \pause Simplification \\
+    		
+    		\pause $ 0 < -5 $ & \pause Simplification \\
+    		& \\
+    	\end{TAB}
+    	
+    	\pause $ \therefore $ since the resulting inequality is false, $ (0, 0) $ \textbf{is not a solution} to $ y < 4x - 5 $.
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 4 \\
+    		\only<2-4>{\small Step 1: Substitute the values for $ x $ and $ y $.}
+    		\only<5-7>{\small Step 2: Simplify the inequality.}
+    		\only<8>{\small Step 3: Check whether the resulting inequality statement is true or false.}}
+    	
+    	Is $ \left(4, \frac{1}{2} \right) $ a solution to $ \frac{1}{2} x + y > 5 $?
+    	
+    	\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{ccccc}
+    		\pause Let: $ x = 4 $, & $ y = \frac{1}{2} $  \\
+    		
+    		\pause $ \frac{1}{2} x + y > 5 $  &  \\
+    		
+    		\pause $ \frac{1}{2} (4) + \frac{1}{2} > 5 $ & \pause Substitution Property \\
+    		
+    		\pause $ 2 + \frac{1}{2} > 5 $ & \pause Simplification \\
+    		
+    		\pause $ 2\frac{1}{2} > 5 $ &  Simplification \\
+%    		& \\
+    	\end{TAB}
+    	
+    	\pause $ \therefore $ since the resulting inequality is false, $ (4, \frac{1}{2}) $ \textbf{is not a solution} to $ \frac{1}{2} x + y > 5 $.
+    \end{frame}
+   
+    \begin{frame}
+    	\begin{center}
+    		\textbf{\LARGE Thank you for watching.}
+    	\end{center}
+    \end{frame}
+	
+\end{document}

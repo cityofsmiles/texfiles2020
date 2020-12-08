@@ -1,0 +1,57 @@
+% go 'cd /root/storage/emulated/0/Documents/documents/latex/20-21/ebook && pdflatex a4-portrait.tex && termux-open a4-portrait.pdf'
+
+% go 'cd /root/storage/emulated/0/Documents/documents/latex/20-21/ebook && convert -density 600 cover.pdf -quality 100 cover.png && termux-open cover.png' 
+
+% go 'cd /root/storage/emulated/0/Documents/documents/latex/20-21/ebook && unoconv -f docx cover.pdf && termux-open cover.docx'
+
+
+
+\documentclass[10pt]{article}
+\usepackage[a4paper, right=0.5in, left=0.5in, top=0.5in, bottom=0.5in, portrait]{geometry}
+
+\input{/root/storage/emulated/0/Documents/documents/latex/1920/common-preamble-2019} 
+
+
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{tikzpicture}[remember picture, overlay]
+\node[anchor=north east, inner sep=0pt, rotate=0] (deped) at ($(current page.north east)+(210:2cm)$)  {\includegraphics[width=1.5in]{deped.jpg}};
+
+\node[rectangle, fill, draw, minimum width=80, minimum height=80, ultra thick, rounded corners=10, green, anchor=north west] (10) at ($(current page.north west)+(-40:2cm)$)  {{\fontsize{40}{40}\fontfamily{pnc}\selectfont {\textbf{\textcolor{white}{10}}}}};
+            
+
+\node[anchor=center, inner sep=0pt, rotate=0] (pyramid) at ($(current page.center)+(-90:3cm)$)  {\includegraphics[width=6.5in]{pyramid.jpg}};
+
+\node[anchor=south, inner sep=0pt, rotate=0] (Adm) at ($(current page.south)+(90:2cm)$)  {\includegraphics[width=1.3in]{adm.jpg}};
+
+
+\node[anchor=south east, inner sep=0pt, rotate=0] (Sale) at ($(current page.south east)+(-25:3.5cm)$)  {\includegraphics[width=4in]{not4sale.jpg}};
+
+
+\end{tikzpicture} 
+
+\vspace*{2in}
+
+\begin{center}
+{\fontsize{40}{40}\fontfamily{pnc}\selectfont {\textbf{\textcolor{black}{Mathematics}}}}
+\end{center} 
+
+\begin{center}
+{\fontsize{20}{20}\fontfamily{pnc}\selectfont {\textbf{\textcolor{black}{Quarter 1 -- Module 1: \\ Sequences }}}}
+\end{center} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

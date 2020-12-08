@@ -1,0 +1,20 @@
+\def \xone {0}
+\def \yone {-3}
+\def \xtwo {1}
+\def \ytwo {-3}
+\def \point {4}
+\def \arrowlen {4}
+\def \anchora {south east}
+\def \anchorb {west}
+
+\coordinate (a) at (\xone, \yone);
+\coordinate (b) at (\xtwo, \ytwo);
+
+
+\pause \fill [fill=black] (a) circle (\point pt);
+\pause  \node[anchor=\anchora, inner sep=2pt, rotate=0] (a-label) at (a) {$(\xone, \yone)$};
+
+\pause \fill [fill=black] (b) circle (\point pt);
+% \node[anchor=\anchorb, inner sep=2pt, rotate=0] (b-label) at (b) {$(\xtwo, \ytwo)$};
+
+\pause \draw[line width=0.3mm, <->, >={Latex[round]}] ($(b)!\arrowlen!(a)$)  -- ($(a)!\arrowlen!(b)$);

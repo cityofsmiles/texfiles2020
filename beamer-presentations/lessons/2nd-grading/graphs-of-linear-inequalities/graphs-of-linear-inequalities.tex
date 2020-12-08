@@ -1,0 +1,273 @@
+\documentclass[14pt]{beamer}
+\input{../../../beamer-preamble-2020}
+\usetheme{default}
+\usecolortheme{seahorse}
+
+\title[] {Graphs of Linear Inequalities}
+\author{Jonathan R. Bacolod}
+\institute[SHS]{Sauyo High School}
+\date{}
+
+\begin{document}
+	\frame{\titlepage}
+	
+	\begin{frame}
+		\frametitle{How to Graph Linear Inequalities?}
+		
+		\begin{enumerate}
+			\item Replace the inequality symbol with an equal sign. The resulting equation becomes	the plane divider.
+			\item \pause Graph the corresponding equation. Use broken line if the inequality contains $ < $ or $ > $ symbol or a solid line if inequality contains $ \leq $ or $ \geq $ symbol.
+			\item \pause  Choose a point on the plane not on the line and check if its coordinates satisfy the inequality.
+			\item \pause  If the inequality is satisfied, shade the region containing that point. If not, shade the other region.
+		\end{enumerate}   
+	\end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 1}
+    	Graph the inequality $ y \leq 2x + 1 $.
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 1 \hspace{0.2em}
+    		\only<2-4>{\begin{minipage}[m]{.65\textwidth}
+    				\tiny Step 1: Replace the inequality symbol with an equal sign. The resulting equation becomes	the plane divider.
+    		\end{minipage}}
+    		\only<5-8>{\begin{minipage}[m]{.65\textwidth}
+    				\tiny  Step 2: Graph the corresponding equation. Use broken line if the inequality contains $ < $ or $ > $ symbol or a solid line if inequality contains $ \leq $ or $ \geq $ symbol.
+    	\end{minipage}}
+    		\only<9-15>{\begin{minipage}[m]{.65\textwidth}
+    				\tiny  Step 3: Choose a point on the plane not on the line and check if its coordinates satisfy the inequality.
+    	\end{minipage}}
+    		\only<16->{\begin{minipage}[m]{.65\textwidth}
+    				\tiny  Step 4: If the inequality is satisfied, shade the region containing that point. If not, shade the other region.
+    	\end{minipage}}}
+    
+    	\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{ccc}
+    		Original inequality	  &  \pause $ y \leq 2x + 1 $ \\%
+    		%    		
+    		\pause Plane divider   &\pause $ y = 2x + 1 $ \\%
+    		
+    		\pause $ m = 2 $ &$ b = 1 $ \\%
+    	\end{TAB}
+    
+    	\vspace{3in}
+    	
+		\pause \plotoverlay{3}{3}{graph1}{0.57}{5}	
+		
+		\only<11->{\sol{7}{2}{\color{black} 
+			
+			\begin{minipage}[m]{0.6\textwidth}
+				Let $ x = 0, y = 0 $	
+				
+				\pause $ y \leq 2x + 1 $
+				
+				\pause $ 0 \leq 2(0) + 1 $
+				
+				\pause $ 0 \leq 0 + 1 $
+				
+				\pause $ 0 \leq 1 $ \pause \redcheck
+			\end{minipage}
+	}}
+    \end{frame}
+ 
+     \begin{frame}
+     	\frametitle{Example 2}
+     	Graph the inequality $ x - 2y > -2 $.
+     \end{frame}
+     
+     \begin{frame}
+     	\frametitle{Example 2\hspace{0.2em}
+     		\only<1-12>{\begin{minipage}[m]{.65\textwidth}
+     				\tiny Step 1: Replace the inequality symbol with an equal sign. The resulting equation becomes	the plane divider.
+     		\end{minipage}}
+     		\only<13-16>{\begin{minipage}[m]{.65\textwidth}
+     				\tiny  Step 2: Graph the corresponding equation. Use broken line if the inequality contains $ < $ or $ > $ symbol or a solid line if inequality contains $ \leq $ or $ \geq $ symbol.
+     		\end{minipage}}
+     		\only<17-24>{\begin{minipage}[m]{.65\textwidth}
+     				\tiny  Step 3: Choose a point on the plane not on the line and check if its coordinates satisfy the inequality.
+     		\end{minipage}}
+     		\only<25->{\begin{minipage}[m]{.65\textwidth}
+     				\tiny  Step 4: If the inequality is satisfied, shade the region containing that point. If not, shade the other region.
+     	\end{minipage}}}
+     	
+     	\only<1-12>{
+     		\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{ccccccc}
+     			Original inequality   &  $ x - 2y > -2 $ \\%
+     			
+     			\pause Change $ > $ to $ = $   &\pause $ x - 2y = -2 $ \\%
+     			
+     			\pause Subtraction Property  &\pause $ x - x - 2y = - x -2 $ \\%
+     			
+     			\pause Simplification  &\pause $ - 2y = - x -2 $ \\%
+     			
+     			\pause Division Property  &\pause $ \dfrac{- 2y}{-2} = \dfrac{- x}{-2} -\dfrac{2}{-2} $ \\%
+     			
+     			\pause Simplification  &\pause $ y = \dfrac{1}{2} x + 1 $ \\%
+     			
+     			\pause $ m = \dfrac{1}{2} $ &$ b = 1 $ \\%
+     	\end{TAB}}
+     
+        \only<13->{\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{ccc}
+        		Original inequality	  & $ x - 2y > -2 $ \\%
+        		
+        		Plane divider   & $ y = \frac{1}{2} x + 1 $ \\%
+        		
+        		$ m = \frac{1}{2} $ &$ b = 1 $ \\%
+        \end{TAB}}
+     	
+     	\vspace{3in}
+     	
+     	\only<14->{\plotoverlay{3}{3}{graph2}{0.65}{4}}	
+     	
+     	\only<20->{\sol{7}{2}{\color{black} 
+     			
+     			\begin{minipage}[m]{0.6\textwidth}
+     				Let $ x = 0, y = 0 $	
+     				
+     				\onslide<21->{$ x - 2y > -2 $}
+     				
+     				\onslide<22->{$ 0 - 2(0) > -2 $}
+     				
+     				\onslide<23->{$ 0 - 0 > -2 $}
+     				
+     				\onslide<24->{$ 0 > -2 $} \onslide<25->{\redcheck}
+     				
+     			\end{minipage}
+     	}}
+     \end{frame}
+ 
+     \begin{frame}
+     	\frametitle{Example 3}
+     	Graph the inequality $ 2x - 2y \geq -8 $.
+     \end{frame}
+     
+     \begin{frame}
+     	\frametitle{Example 3\hspace{0.2em}
+     		\only<1-12>{\begin{minipage}[m]{.65\textwidth}
+     				\tiny Step 1: Replace the inequality symbol with an equal sign. The resulting equation becomes	the plane divider.
+     		\end{minipage}}
+     		\only<13-16>{\begin{minipage}[m]{.65\textwidth}
+     				\tiny  Step 2: Graph the corresponding equation. Use broken line if the inequality contains $ < $ or $ > $ symbol or a solid line if inequality contains $ \leq $ or $ \geq $ symbol.
+     		\end{minipage}}
+     		\only<17-24>{\begin{minipage}[m]{.65\textwidth}
+     				\tiny  Step 3: Choose a point on the plane not on the line and check if its coordinates satisfy the inequality.
+     		\end{minipage}}
+     		\only<25->{\begin{minipage}[m]{.65\textwidth}
+     				\tiny  Step 4: If the inequality is satisfied, shade the region containing that point. If not, shade the other region.
+     	\end{minipage}}}
+     	
+     	\only<1-12>{
+     		\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{ccccccc}
+     			Original inequality   &  $ 2x - 2y \geq -8 $ \\%
+     			
+     			\pause Change $ \geq $ to $ = $   &\pause $ 2x - 2y = -8 $ \\%
+     			
+     			\pause Subtraction Property  &\pause $ 2x - 2x - 2y = -2x -8 $ \\%
+     			
+     			\pause Simplification  &\pause $ - 2y = -2x - 8 $ \\%
+     			
+     			\pause Division Property  &\pause $ \dfrac{- 2y}{-2} = \dfrac{-2x}{-2} -\dfrac{8}{-2} $ \\%
+     			
+     			\pause Simplification  &\pause $ y = x + 4 $ \\%
+     			
+     			\pause $ m = 1 $ &$ b = 4 $ \\%
+     	\end{TAB}}
+     	
+     	\only<13->{\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{ccc}
+     			Original inequality	  & $ 2x - 2y \geq -8 $ \\%
+     			
+     			Plane divider   & $ y = x + 4 $ \\%
+     			
+     			$ m = 1 $ &$ b = 4 $ \\%
+     	\end{TAB}}
+     	
+     	\vspace{3in}
+     	
+     	\only<14->{\plotoverlay{3}{3}{graph3}{0.35}{8}}	
+     	
+     	\only<20->{\sol{7}{2}{\color{black} 
+     			
+     			\begin{minipage}[m]{0.6\textwidth}
+     				Let $ x = 0, y = 0 $	
+     				
+     				\onslide<21->{$ 2x - 2y \geq -8 $}
+     				
+     				\onslide<22->{$ 2(0) - 2(0) \geq -8 $}
+     				
+     				\onslide<23->{$ 0 - 0 \geq -8 $}
+     				
+     				\onslide<24->{$ 0 \geq -8 $} \onslide<25->{\redcheck}
+     				
+     			\end{minipage}
+     	}}
+     \end{frame}
+ 
+     \begin{frame}
+     	\frametitle{Example 4}
+     	Graph the inequality $ -3x + y < -2 $.
+     \end{frame}
+     
+     \begin{frame}
+     	\frametitle{Example 4\hspace{0.2em}
+     		\only<1-8>{\begin{minipage}[m]{.65\textwidth}
+     				\tiny Step 1: Replace the inequality symbol with an equal sign. The resulting equation becomes	the plane divider.
+     		\end{minipage}}
+     		\only<9-12>{\begin{minipage}[m]{.65\textwidth}
+     				\tiny  Step 2: Graph the corresponding equation. Use broken line if the inequality contains $ < $ or $ > $ symbol or a solid line if inequality contains $ \leq $ or $ \geq $ symbol.
+     		\end{minipage}}
+     		\only<13-20>{\begin{minipage}[m]{.65\textwidth}
+     				\tiny  Step 3: Choose a point on the plane not on the line and check if its coordinates satisfy the inequality.
+     		\end{minipage}}
+     		\only<21->{\begin{minipage}[m]{.65\textwidth}
+     				\tiny  Step 4: If the inequality is satisfied, shade the region containing that point. If not, shade the other region.
+     	\end{minipage}}}
+     	
+     	\only<1-8>{
+     		\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{ccccccc}
+     			Original inequality   &  $ -3x + y < -2 $ \\%
+     			
+     			\pause Change $ < $ to $ = $   &\pause $ -3x + y = -2 $ \\%
+     			
+     			\pause Addition Property  &\pause $ -3x + 3x + y = 3x -2 $ \\%
+     			     			
+     			\pause Simplification  &\pause $ y = 3x - 2 $ \\%
+     			
+     			\pause $ m = 3 $ &$ b = -2 $ \\%
+     	\end{TAB}}
+     	
+     	\only<9->{\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{ccc}
+     			Original inequality	  & $ -3x + y < -2 $ \\%
+     			
+     			Plane divider   & $ y = 3x - 2 $ \\%
+     			
+     			$ m = 3 $ & $ b = -2 $ \\%
+     	\end{TAB}}
+     	
+     	\vspace{3in}
+     	
+     	\only<10->{\plotoverlay{3}{3}{graph4}{0.35}{8}}	
+     	
+     	\only<16->{\sol{7}{2}{\color{black} 
+     			
+     			\begin{minipage}[m]{0.6\textwidth}
+     				Let $ x = 0, y = 0 $	
+     				
+     				\onslide<17->{$ -3x + y < -2 $}
+     				
+     				\onslide<18->{$ -3(0) + 0 < -2 $}
+     				
+     				\onslide<19->{$ 0 + 0 < -2 $}
+     				
+     				\onslide<20->{$ 0 < -2 $} \onslide<21->{\redcross}
+     				
+     			\end{minipage}
+     	}}
+     \end{frame}
+ 
+    \begin{frame}
+    	\begin{center}
+    		\textbf{\LARGE Thank you for watching.}
+    	\end{center}
+    \end{frame}
+	
+\end{document}

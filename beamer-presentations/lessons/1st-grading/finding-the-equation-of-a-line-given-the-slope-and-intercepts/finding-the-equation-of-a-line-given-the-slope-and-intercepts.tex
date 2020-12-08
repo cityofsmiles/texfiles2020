@@ -1,0 +1,173 @@
+\documentclass[14pt]{beamer}
+\input{../../../beamer-preamble-2020}
+\usetheme{default}
+\usecolortheme{seahorse}
+
+\title[] {Finding the Equation of a Line Given the Slope and Intercepts}
+\author{Jonathan R. Bacolod}
+\institute[SHS]{Sauyo High School}
+\date{}
+
+\begin{document}
+	\frame{\titlepage}
+	
+	\begin{frame}
+		\frametitle{Review}
+		What is the x-intercept and y-intercept?
+		\begin{itemize}
+			\item If a line crosses the x-axis at the point $ (a,0) $, then the
+			number $ a $ is the x-intercept of the line.
+			\item \pause If a line crosses the y-axis at the point $ (0,b) $, then the
+			number $ b $ is the y-intercept of the line. 
+		\end{itemize}
+	\end{frame}
+		
+	\begin{frame}
+		\frametitle{How to Find the Equation of a Line?}
+		Use the formulae:
+		\begin{enumerate}  
+			\item Slope-intercept form: $ y = mx + b $
+			\item \pause Two-intercept form: $  \dfrac{x}{a} + \dfrac{y}{b} = 1$
+		\end{enumerate}  
+	\end{frame}
+
+    \begin{frame}
+    	\frametitle{How to Find the Equation of a Line Given the Slope and the y-intercept?}
+    	Use the slope-intercept form: $ y = mx + b $
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 1}
+    	Find the equation of the line with a slope equal to $ \dfrac{2}{3} $ and a y-intercept equal to $ 5 $.
+    	    	
+    	\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{cccc}
+    		\pause Given: $ m = \dfrac{2}{3} $,  & \pause $ b = 5 $  \\
+    		
+    		\pause $ y = mx + b  $  &  \\
+    		
+    		\pause $ y = \dfrac{2}{3}x + 5  $ & \pause Substitution \\
+    		& \\
+    	\end{TAB}
+  
+      $ \therefore $ the equation of the line is $ y = \dfrac{2}{3}x + 5 $.
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 2}
+    	 If the slope of a line is $ 4 $ and it passes through the origin, what is its
+    	 equation?
+    	     	
+    	\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{cccc}
+    		\pause Given: $ m = 4 $,  & \pause $ (x_1, y_1) = (0, 0), \pause b = 0 $  \\
+    		
+    		\pause $ y = mx + b  $  &  \\
+    		
+    		\pause $ y = 4x + 0  $ & \pause Substitution \\
+    		& \\
+    	\end{TAB}
+    	
+    	$ \therefore $ the equation of the line is $ y = 4x $.
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 3}
+    	A line that passes through $ (0,-2) $ has a slope equal to $ 6 $. Find its equation.
+    	    	
+    	\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{cccc}
+    		\pause Given: $ m = 6 $,  & \pause $ b = -2 $  \\
+    		
+    		\pause $ y = mx + b $  &  \\
+    		
+    		\pause $ y = 6x - 2 $ & \pause Substitution \\
+    		& \\
+    	\end{TAB}
+    	
+    	$ \therefore $ the equation of the line is $ y = 6x - 2 $.
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{How to Find the Equation of a Line Given the Intercepts?}
+    	Use the two-intercept form: $  \dfrac{x}{a} + \dfrac{y}{b} = 1$.
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 1}
+    	Find equation of a line that has with an x–intercept $ a = 3 $ and y–
+    	intercept $ b = 4 $.
+    	
+    \lcmtwobytwolineone{3}{(3)}{}
+    \lcmtwobytwolinetwo{4}{}{(2^2)}
+    \lcmtwobytwolinethree{3}{2^2}{12}
+    
+       	\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{cccccc}
+    		\pause Given: $ a = 3 $,  & \pause $ b = 4 $  \\
+    		
+    		\pause $ \dfrac{x}{a} + \dfrac{y}{b} = 1 $  &  \\
+    		
+    		\pause $ \dfrac{x}{3} + \dfrac{y}{4} = 1 $ &\pause Substitution \\
+    		    		
+    	    \only<7-17>{\lcmtwobytwo{1}{0.1}} \only<18->{$ 12\left[\dfrac{x}{3} + \dfrac{y}{4} \right] = 12(1) $} & \only<19->{MPE} \\
+    	    
+    	    \only<20->{$ 4x + 3y = 12 $} & \only<21->{Distributive Property} \\
+    		& \\
+    	\end{TAB}
+   
+    	\only<22>{$ \therefore $ the equation of the line is $ 4x + 3y = 12 $.}
+    \end{frame}
+    
+    \begin{frame}
+    	\frametitle{Example 2}
+    	What is the equation of the line that passes through points $ (0,2) $ and $ (7,0) $?
+    	    	
+    	\lcmtwobytwolineone{7}{(7)}{}
+    	\lcmtwobytwolinetwo{2}{}{(2)}
+    	\lcmtwobytwolinethree{7}{2}{14}
+    	
+    	\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{cccccc}
+    		\pause Given: $ P_1 (0, 2), \pause b = 2 $,  & \pause $ P_2 (7, 0), \pause a = 7 $  \\
+    		
+    		\pause $ \dfrac{x}{a} + \dfrac{y}{b} = 1 $  &  \\
+    		
+    		\pause $ \dfrac{x}{7} + \dfrac{y}{2} = 1 $ &\pause Substitution \\
+    		
+    		\only<7-19>{\lcmtwobytwo{1}{0.1}} \only<20->{$ 14\left[\dfrac{x}{7} + \dfrac{y}{2} \right] = 14(1) $} & \only<21->{MPE} \\
+    		
+    		\only<22->{$ 2x + 7y = 14 $} & \only<23->{Distributive Property} \\
+    		& \\
+    	\end{TAB}
+    	
+    	\only<24>{$ \therefore $ the equation of the line is $ 2x + 7y = 14 $.}
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 3}
+    	\small Find the equation of the line with $ 6 $ and $ -3 $ as its x- and y-intercepts
+    	respectively.
+    	    	
+    	\lcmtwobythreelineone{6}{(2)}{(3)}{}
+    	\lcmtwobythreelinetwo{-3}{}{(3)}{(-1)}
+    	\lcmtwobythreelinethree{2}{3}{-1}{-6}
+    	
+    	\begin{TAB}(@, 1mm, 5mm)[2mm]{ll}{cccccc}
+    		\pause Given: $ a = 6 $,  & \pause $ b = -3 $  \\
+    		
+    		\pause $ \dfrac{x}{a} + \dfrac{y}{b} = 1 $  &  \\
+    		
+    		\pause $ \dfrac{x}{6} + \dfrac{y}{-3} = 1 $ &\pause Substitution \\
+    		
+    		\only<7-20>{\lcmtwobythree{1}{0.1}} \only<21->{$ 6\left[\dfrac{x}{6} + \dfrac{y}{-3} \right] = 6(1) $} & \only<22->{MPE} \\
+    		
+    		\only<23->{$ x - 2y = 6 $} & \only<24->{Distributive Property} \\
+    		& \\
+    	\end{TAB}
+    	
+    	\only<25>{$ \therefore $ the equation of the line is $ x - 2y = 6 $.}
+    \end{frame}
+
+    \begin{frame}
+    	\begin{center}
+    		\textbf{\LARGE Thank you for watching.}
+    	\end{center}
+    \end{frame}
+	
+\end{document}

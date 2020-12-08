@@ -1,0 +1,171 @@
+\documentclass[14pt]{beamer}
+\input{../../../beamer-preamble-2020}
+\usetheme{default}
+\usecolortheme{seahorse}
+
+\title[] {Linear Equations in Two Variables}
+\author{Jonathan R. Bacolod}
+\institute[SHS]{Sauyo High School}
+\date{}
+
+\begin{document}
+	\frame{\titlepage}
+	
+	\begin{frame}
+		\frametitle{What is a Linear Equation?}
+		Linear Equation: an equation in two variables which can be written in the form $ Ax+By=C $, where $ A, B \neq 0$, and $ A, B, C \in \mathbb{R} $. 
+	\end{frame}
+
+    \begin{frame}
+    	\frametitle{Example}
+    	Determine whether each equation is linear in two variables or not. Write YES or NO.
+    	\begin{enumerate}
+    		\begin{multicols}{2}
+    		\item \pause $ 2x = 4 + y $ \pause \minivoid \textbf{YES}
+    		\item \pause $ y = 5x $ \pause \minivoid \textbf{YES}
+    		\item \pause $ 2x - 1 = y $ \pause \minivoid \textbf{YES}
+    		\item \pause $ \dfrac{1}{4}x = y $ \pause \minivoid \textbf{YES}
+    		\item \pause $ xy = 2 $ \pause \minivoid \textbf{NO}
+    		\item \pause $ x^2 + y^2 = 1 $ \pause \minivoid \textbf{NO}
+    		\item \pause $ x = y^2 $ \pause \minivoid \textbf{NO}
+    		\item \pause $ y = \dfrac{x}{2} $ \pause \minivoid \textbf{YES}
+    		\item \pause $ y = \dfrac{6}{x} $ \pause \minivoid \textbf{NO}
+    		\item \pause $ 2x + y = 8 $ \pause \minivoid \textbf{YES}
+    	\end{multicols}
+    	\end{enumerate}
+     \end{frame}
+ 
+    \begin{frame}
+    	\frametitle{What is a Solution of a Linear Equation?}
+    	The solution of a linear equation in two variables is an ordered pair that makes the
+equation true.
+    \end{frame}
+
+\begin{frame}
+	\frametitle{How to Solve a Linear Equation?}
+	\begin{enumerate}
+		\item Choose any value for $ x $.
+		\item \pause Substitute the chosen value for $ x $ and solve for $ y $.
+	\end{enumerate}
+\end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 1}
+    	Find solutions to $ y = 2x - 1 $.
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{How to Solve a Linear Equation?}
+    	\begin{enumerate}
+    		\item Choose any value for $ x $.
+    	\end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 1}
+    	Find solutions to $ y = 2x - 1 $ 
+    	
+    	\pause \vone Let $ x = 0 $
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{How to Solve a Linear Equation?}
+    	\begin{enumerate}
+    		\item Choose any value for $ x $.
+    		\item Substitute the chosen value for $ x $ and solve for $ y $.
+    	\end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 1}
+    	Find solutions to $ y = 2x - 1 $ 
+    	
+    	\vone Let $ x = 0 $:
+    	
+    	\pause \vone $ y = 2(0) - 1 $ 
+    	
+    	\pause \vone $ y = 0 - 1 $ 
+    	
+    	\pause \vone $ y = - 1 $ 
+    	
+    	\pause \vone $ \therefore $ Solution $ = (0, -1) $
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 1}
+    	Find solutions to $ y = 2x - 1 $ 
+    	
+    	\vone Let $ x = 1 $:
+    	
+    	\pause \vone $ y = 2(1) - 1 $ 
+    	
+    	\pause \vone $ y = 2 - 1 $ 
+    	
+    	\pause \vone $ y = 1 $ 
+    	
+    	\pause \vone $ \therefore $ Solution $ = (1, 1) $
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 1}
+    	Find solutions to $ y = 2x - 1 $ 
+    	
+    	\vone Let $ x = -1 $:
+    	
+    	\pause \vone $ y = 2(-1) - 1 $ 
+    	
+    	\pause \vone $ y = -2 - 1 $ 
+    	
+    	\pause \vone $ y = - 3 $ 
+    	
+    	\pause \vone $ \therefore $ Solution $ = (-1, -3) $
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 1}
+    	$ \therefore $ Some solutions to $ y = 2x - 1 $ are $(0, -1) $,  $(1, 1) $ and $ (-1, -3) $.
+    	
+    	\mygrid{0.3}{plotting}
+    \end{frame}
+
+    \begin{frame}
+    	\frametitle{Example 2}
+    	Is $ (-1, -4) $ a solution to the equation $ x - y= 3 $?
+    	
+    	\pause \vhalf Let $ x = -1 $:
+    	
+    	\pause \vhalf $ -1 -y = 3 $ 
+    	
+    	\pause \vhalf $ -y = 3 + 1 $ 
+    	
+    	\pause \vhalf $ -y = 4 $ 
+    	
+    	\pause \vhalf $ -1(-y) = -1(4) $
+    	
+    	\pause \vhalf $ y = -4 $  
+    	
+    	\pause \vhalf $ \therefore (-1, -4) $ is a solution to the equation $ x - y= 3 $.
+    \end{frame}
+
+   \begin{frame}
+   	\frametitle{Example 3}
+   	Given the equation $ x + y = 2$, what is the value of $ y $ if $ x = -2$?
+   	
+   	\pause \vhalf Let $ x = -2 $:
+   	
+   	\pause \vhalf $ -2 + y = 2 $ 
+   	
+   	\pause \vhalf $ y = 2 + 2 $ 
+   	
+   	\pause \vhalf $ y = 4 $ 
+   	
+   	\pause \vhalf $ \therefore$ if $ x = -2 $, then $ y = 4 $. 
+   \end{frame}
+ 
+    \begin{frame}
+    	\begin{center}
+    		\textbf{\LARGE Thank you for watching.}
+    	\end{center}
+    \end{frame}
+	
+\end{document}

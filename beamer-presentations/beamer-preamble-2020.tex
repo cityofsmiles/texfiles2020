@@ -1,0 +1,265 @@
+\usepackage[utf8]{inputenc}
+\usepackage{bookman} %font style
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage{tikz}
+\usepackage{xcolor} % for font color
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{angles,quotes}
+%\usetikzlibrary{decorations.pathreplacing}
+\usepackage{wasysym} %for checked symbol 
+\usepackage{tabularx} 
+\usepackage{color, colortbl} %coloring table cells
+\usepackage{gensymb} %degree symbol
+\usepackage{amsfonts} %integer symbol
+\usepackage{pgfplots} %graphs
+\usepackage{easytable} % TAB
+\usepackage{siunitx} % celsius symbol
+\usepackage{stackengine} %to define \pesos 
+\usepackage{systeme} % system of equations
+\usepackage{pifont} % cross mark
+
+\newcommand\pesos{\stackengine{-1.1ex}{P}{\stackengine{-1ex}{$-$}{$-$}{O}{c}{F}{F}{S}}{O}{c}{F}{T}{S}} 
+
+\definecolor{Lgray}{gray}{0.9}
+\definecolor{Dgray}{gray}{0.6}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X} %for tabularx
+
+\makeatletter
+\newlength\beamerleftmargin
+\setlength\beamerleftmargin{\Gm@lmargin}
+\makeatother
+
+\newcommand{\void}{\text{\hspace{2em}}}
+
+\newcommand{\minivoid}{\text{\hspace{1em}}}
+
+\newcommand{\sol}[3]{\begin{tikzpicture}[remember picture, overlay]
+		\color{red}
+        \node at (current page.south west) (sw) {};
+		\node[anchor=south west, inner sep=0pt] at ($(sw) + (#1, #2) $)   (a) {
+			\begin{minipage}[t]{0.75\textwidth}
+				#3
+			\end{minipage}};
+    \end{tikzpicture}}
+
+
+\newcommand \redcheck {{\color{red}\checkmark}}
+
+\newcommand \redcross {{\color{red}\ding{56}}}
+
+\newcommand{\vone}{\vspace{1em}}
+
+\newcommand{\vhalf}{\vspace{0.5em}}
+
+\newcommand{\mygrid}[2]{\begin{center}
+		\begin{tikzpicture}[scale=#1]		
+			\draw [help lines] (-10, -10) grid (10, 10);
+			\draw[line width=0.5mm, <->, >={Latex[round]}] (-10, 0) -- (10, 0);
+			\draw[line width=0.5mm, <->, >={Latex[round]}] (0, -10) -- (0, 10);	
+			\input{#2}
+		\end{tikzpicture}  
+	\end{center}} 
+
+\newcommand{\arrowcomment}[9]{\begin{tikzpicture}[remember picture, overlay]
+		\node at (current page.south west) (sw) {};
+		\node[anchor=south west, inner sep=0pt] at ($(sw) + (0, 0) $)   (a) {
+			\begin{tikzpicture}[->,>=stealth, thick, main node/.style={rectangle,font=\sffamily\bfseries}, remember picture, overlay]
+
+				\node (1)  at (#1, #2) {};
+
+				\node[main node] (2)  at (#3, #4) {#5};
+
+				\draw [->, red] (1.#6) to [out=#8,in=#9] (2.#7);
+
+			\end{tikzpicture}
+		};
+\end{tikzpicture}} 
+
+\newcommand{\plotit}[3]{\begin{center}
+		\begin{tikzpicture}[scale=#2, main node/.style={rectangle,font=\sffamily\bfseries}]		
+			\draw [help lines] (-#3, -#3) grid (#3, #3);
+			\draw[line width=0.5mm, <->, >={Latex[round]}] (-#3, 0) -- (#3, 0);
+			\draw[line width=0.5mm, <->, >={Latex[round]}] (0, -#3) -- (0, #3);	
+			\input{#1}
+		\end{tikzpicture}  
+\end{center}} 
+
+\newcommand{\plotpoint}[7]{\begin{center}
+		\begin{tikzpicture}[scale=#7]		
+			\coordinate (a) at (#1, #2);
+			\draw [help lines] (-#5, -#5) grid (#5, #5);
+			\draw[line width=#6 mm, <->, >={Latex[round]}] (-#5, 0) -- (#5, 0);
+			\draw[line width=#6 mm, <->, >={Latex[round]}] (0, -#5) -- (0, #5);	
+			\fill [fill=black] (a) circle (#3 pt);
+			\node[anchor=#4, inner sep=2pt, rotate=0] (a-label) at (a) {$(#1, #2)$};
+			\end{tikzpicture}  
+	\end{center}} 
+
+\newcommand{\plotoverlay}[5]{\begin{tikzpicture}[remember picture, overlay]
+		\node at (current page.south west) (sw) {};
+		\node[anchor=south west, inner sep=0pt] at ($(sw) + (#1, #2) $)   (a) {
+			\begin{minipage}[t]{0.75\textwidth}
+				 \begin{tikzpicture}[scale=#4, remember picture, overlay]		
+
+						\draw [help lines] (-#5, -#5) grid (#5, #5);
+
+						\draw[line width=0.5mm, <->, >={Latex[round]}] (-#5, 0) -- (#5, 0);
+
+						\draw[line width=0.5mm, <->, >={Latex[round]}] (0, -#5) -- (0, #5);	
+
+						\input{#3}
+
+				\end{tikzpicture}
+		\end{minipage}};
+\end{tikzpicture}}
+
+\newcommand{\lcmthreebythree}[9]{\begin{tikzpicture}[remember picture, overlay]
+		\color{red}
+		\node at (current page.south west) (sw) {};
+		\node[anchor=south west, inner sep=0pt] at ($(sw) + (#1, #2) $)   (a) {
+			\begin{minipage}[t]{0.75\textwidth}
+				\pause Find the LCM: \\
+
+				\begin{tabular}{rclll}
+
+					$ \pause #3 $ & $=$ & $ \pause #6 $ & & \\
+
+					$ \pause #4 $ & $=$ &  & $ \pause #7$ & \\
+
+					$ \pause #5  $ & $=$ &  & & $ \pause #8 $ \\
+
+					\hline
+
+					\pause LCM & $=$ & \pause $ (#6) $ & \pause $ (#7) $ & \pause $ (#8) \pause = #9 $  \\
+
+				\end{tabular}
+		\end{minipage}};
+\end{tikzpicture}}
+
+
+\newcommand{\lcmtwobytwolineone}[3]{
+	\def \lcmtwobytwolineonenumber {#1}
+	\def \lcmtwobytwolineonefactorone {#2}
+	\def \lcmtwobytwolineonefactortwo {#3}}
+
+\newcommand{\lcmtwobytwolinetwo}[3]{
+	\def \lcmtwobytwolinetwonumber {#1}
+	\def \lcmtwobytwolinetwofactorone {#2}
+	\def \lcmtwobytwolinetwofactortwo {#3}
+%	\lcmtwobytwolineone
+}
+
+\newcommand{\lcmtwobytwolinethree}[3]{
+	\def \lcmtwobytwolinethreelcm {#3}
+	\def \lcmtwobytwolinethreefactorone {#1}
+	\def \lcmtwobytwolinethreefactortwo {#2}
+%	\lcmtwobytwolinetwo
+}
+
+\newcommand{\lcmtwobytwo}[2]{\begin{tikzpicture}[remember picture, overlay]
+%		\lcmtwobytwolinethree
+		\color{red}
+		\node at (current page.south west) (sw) {};
+		\node[anchor=south west, inner sep=0pt] at ($(sw) + (#1, #2) $)   (a) {
+			\begin{minipage}[t]{0.75\textwidth}
+				\pause Find the LCM: 
+				
+				\begin{tabular}{rccccc}
+
+					$ \pause \lcmtwobytwolineonenumber $ & $=$ & $ \pause \lcmtwobytwolineonefactorone $ & $ \pause \lcmtwobytwolineonefactortwo $ & & \\
+
+					$ \pause \lcmtwobytwolinetwonumber $ & $=$ & $ \pause \lcmtwobytwolinetwofactorone $ & $ \pause \lcmtwobytwolinetwofactortwo $ & & \\
+
+					\hline
+
+					\pause LCM & $=$ & \pause $ (\lcmtwobytwolinethreefactorone) $ & \pause $ (\lcmtwobytwolinethreefactortwo) $ & $=$ & \pause $ \lcmtwobytwolinethreelcm $  \\
+
+				\end{tabular}
+		\end{minipage}};
+\end{tikzpicture}}
+
+
+\newcommand{\lcmtwobythreelineone}[4]{
+	\def \lcmtwobythreelineonenumber {#1}
+	\def \lcmtwobythreelineonefactorone {#2}
+	\def \lcmtwobythreelineonefactortwo {#3}
+	\def \lcmtwobythreelineonefactorthree {#4}}
+
+\newcommand{\lcmtwobythreelinetwo}[4]{
+	\def \lcmtwobythreelinetwonumber {#1}
+	\def \lcmtwobythreelinetwofactorone {#2}
+	\def \lcmtwobythreelinetwofactortwo {#3}
+	\def \lcmtwobythreelinetwofactorthree {#4}
+}
+
+\newcommand{\lcmtwobythreelinethree}[4]{
+	\def \lcmtwobythreelinethreefactorone {#1}
+	\def \lcmtwobythreelinethreefactortwo {#2}
+	\def \lcmtwobythreelinethreefactorthree {#3}
+	\def \lcmtwobythreelinethreelcm {#4}
+}
+
+\newcommand{\lcmtwobythree}[2]{\begin{tikzpicture}[remember picture, overlay]
+		\color{red}
+		\node at (current page.south west) (sw) {};
+		\node[anchor=south west, inner sep=0pt] at ($(sw) + (#1, #2) $)   (a) {
+			\begin{minipage}[t]{0.75\textwidth}
+				\pause Find the LCM: 
+				
+				\begin{tabular}{rcccccc}
+					
+					$ \pause \lcmtwobythreelineonenumber $ & $=$ & $ \pause \lcmtwobythreelineonefactorone $ & $ \pause \lcmtwobythreelineonefactortwo $ & $ \pause \lcmtwobythreelineonefactorthree $ & & \\
+					
+					$ \pause \lcmtwobythreelinetwonumber $ & $=$ & $ \pause \lcmtwobythreelinetwofactorone $ & $ \pause \lcmtwobythreelinetwofactortwo $ & $ \pause \lcmtwobythreelinetwofactorthree $ & & \\
+					
+					\hline
+					
+					\pause LCM & $=$ & \pause $ (\lcmtwobythreelinethreefactorone) $ & \pause $ (\lcmtwobythreelinethreefactortwo) $ & \pause $ (\lcmtwobythreelinethreefactorthree) $ & $=$ & \pause $ \lcmtwobythreelinethreelcm $  \\
+					
+				\end{tabular}
+		\end{minipage}};
+\end{tikzpicture}}
+
+\newcommand{\plotsystvars}[8]{
+	\def \eqone {#1}
+	\def \eqtwo {#2}
+	\def \solx {#3}
+	\def \soly {#4}
+	\def \solanchor {#5}
+	\def \labelxshift {#6}
+	\def \labelyshift {#7}
+	\def \solmarksize {#8}
+}
+
+\newcommand{\plotsyst}[7]{
+\begin{tikzpicture}[scale=#1]
+	
+	\begin{axis} 
+		[
+		xticklabels={}, 
+		yticklabels={}, 
+		ymin=-#2, ymax=#2,
+		xmin=-#2, xmax=#2,
+		axis lines = center, 
+		inner axis line style={Latex-Latex,very thick}, 
+		grid=both,
+		minor tick num=#7, 
+		tick align=inside,
+		after end axis/.code={
+			\path (axis cs: \solx,\soly) 
+			node [anchor=\solanchor, xshift=\labelxshift pt, yshift=\labelyshift pt] {$ (\solx, \soly) $}; } 
+		] 
+		
+		\addplot[<->, >={Latex[round]},  ultra thick, domain=#3:#4, samples=200]{\eqone}node[]{};
+		
+		\addplot[<->, >={Latex[round]},  ultra thick, domain=#5:#6, samples=200]{\eqtwo}node[]{};
+			
+		\pause \addplot[only marks, mark=*, mark size=\solmarksize pt, color=black,] coordinates {(\solx, \soly)};
+	\end{axis} 
+
+\end{tikzpicture} 
+}

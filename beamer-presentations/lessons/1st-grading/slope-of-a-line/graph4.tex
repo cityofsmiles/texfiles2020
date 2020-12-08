@@ -1,0 +1,14 @@
+\coordinate (a) at (-5, 4);
+\coordinate (b) at (4, -2);
+
+\draw[line width=0.3mm, <->, >={Latex[round]}] ($(b)!1.4!(a)$)  -- ($(a)!1.4!(b)$);
+
+\pause \fill [fill=black] (a) circle (8pt);
+\fill [fill=black] (b) circle (8pt);
+
+
+\pause \node[anchor=south west, inner sep=2pt, rotate=0] (a-label) at (a) {$(-5, 4)$};
+
+\pause \node[anchor=south west, inner sep=2pt, rotate=0] (b-label) at (b) {$(4, -2)$};
+
+

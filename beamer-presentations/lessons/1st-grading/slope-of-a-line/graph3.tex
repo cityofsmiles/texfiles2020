@@ -1,0 +1,16 @@
+\coordinate (a) at (-5, 4);
+\coordinate (b) at (4, -2);
+\coordinate (c) at (-5, -2);
+
+\draw[line width=0.3mm, <->, >={Latex[round]}] ($(b)!1.4!(a)$)  -- ($(a)!1.4!(b)$);
+
+\pause \fill [fill=black] (a) circle (8pt);
+\fill [fill=black] (b) circle (8pt);
+
+\pause \draw[red, line width=0.4mm, ->, >={Latex[round]}, dashed] (a)  -- (c);
+\pause \node[anchor=east, inner sep=2pt, rotate=0] (rise) at ($(a)!0.5!(c)$) {\small rise $ = -6 $ units};
+
+\pause \draw[green, line width=0.4mm, ->, >={Latex[round]}, dashed] (c)  -- (b);
+\pause \node[anchor=north, inner sep=2pt, rotate=0] (run) at ($(c)!0.5!(b)$) {\small run $ = 9 $ units};
+
+

@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+%\usepackage{bookman} %font style
+\usepackage[pdftex]{graphicx}
+\usepackage[legalpaper, portrait, right=0.5in,  left=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{setspace}
+%\singlespacing
+\onehalfspacing
+%\doublespacing
+%\setstretch{0.8} % for custom spacing
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{multicol}
+\usepackage{rotating} % for answer keys
+\usepackage{amsmath} %for dfrac command
+\usepackage{enumitem} % to resume enumerate
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc}
+
+\pagenumbering{gobble}
+
+\newcommand{\blank}{\underline{\hspace{2em}}}%{\rule{1em}{0.15ex}}
+
+\newcommand{\void}{\text{\hspace{2em}}}
+
+\newcommand{\lineplot}[7]{\begin{center}
+		\begin{tikzpicture}[scale=#6]		
+			\draw [help lines] (-#7, -#7) grid (#7, #7);
+			\draw[line width=0.7mm, <->, >={Latex[round]}] (-#7, 0) -- (#7, 0);
+			\draw[line width=0.7mm, <->, >={Latex[round]}] (0, -#7) -- (0, #7);	
+			
+			\coordinate (a) at (#1, #2);
+			\coordinate (b) at (#3, #4);
+			
+			\fill [fill=black] (a) circle (6pt);
+			\fill [fill=black] (b) circle (6pt);
+			
+			\draw[line width=0.5mm, <->, >={Latex[round]}] ($(b)!#5!(a)$)  -- ($(a)!#5!(b)$);
+		\end{tikzpicture}  
+\end{center}}

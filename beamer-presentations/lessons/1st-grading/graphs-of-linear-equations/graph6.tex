@@ -1,0 +1,27 @@
+\def \xone {1}
+\def \yone {3}
+\def \xtwo {4}
+\def \ytwo {5}
+\def \point {5}
+\def \arrowlen {2}
+\def \anchora {north west}
+\def \anchorb {north west}
+
+\coordinate (a) at (\xone, \yone);
+\coordinate (b) at (\xtwo, \ytwo);
+\coordinate (c) at (\xone, \ytwo);
+
+
+\fill [fill=black] (a) circle (\point pt);
+\node[anchor=\anchora, inner sep=2pt, rotate=0] (a-label) at (a) {$(\xone, \yone)$};
+
+\pause \draw[red, line width=0.4mm, ->, >={Latex[round]}, dashed] (a)  -- (c);
+\pause \node[anchor=east, inner sep=2pt, rotate=0] (rise) at ($(a)!0.5!(c)$) {\small rise $ = 2 $ units};
+
+\pause \draw[green, line width=0.4mm, ->, >={Latex[round]}, dashed] (c)  -- (b);
+\pause \node[anchor=south, inner sep=2pt, rotate=0] (run) at ($(c)!0.5!(b)$) {\small run $ = 3 $ units};
+
+\fill [fill=black] (b) circle (\point pt);
+%\pause \node[anchor=\anchorb, inner sep=2pt, rotate=0] (b-label) at (b) {$(\xtwo, \ytwo)$};
+
+%\pause \draw[line width=0.3mm, <->, >={Latex[round]}] ($(b)!\arrowlen!(a)$)  -- ($(a)!\arrowlen!(b)$);

@@ -1,0 +1,42 @@
+\def \yintx {0}
+\def \yinty {-2}
+\def \pointtwox {1}
+\def \pointtwoy {1}
+\def \endonex {-2}
+\def \endoney {-8}
+\def \endtwox {3.33}
+\def \endtwoy {8}
+\def \linetype {dashed}
+\def \point {6}
+\def \tryx {0}
+\def \tryy {0}
+\def \anchortry {south east}
+\def \gridsize {8}
+\def \corneronex {-\gridsize}
+\def \corneroney {-\gridsize}
+\def \cornertwox {\gridsize}
+\def \cornertwoy {-\gridsize}
+\def \cornerthreex {\gridsize}
+\def \cornerthreey {\gridsize}
+
+\coordinate (endone) at (\endonex, \endoney);
+\coordinate (endtwo) at (\endtwox, \endtwoy);
+\coordinate (yint) at (\yintx, \yinty);
+\coordinate (pointtwo) at (\pointtwox, \pointtwoy);
+\coordinate (trypoint) at (\tryx, \tryy);
+\coordinate (cornerone) at (\corneronex, \corneroney);
+\coordinate (cornertwo) at (\cornertwox, \cornertwoy);
+\coordinate (cornerthree) at (\cornerthreex, \cornerthreey);
+
+\only<11->{\fill [fill=black] (yint) circle (\point pt);}
+
+\only<12->{\fill [fill=black] (pointtwo) circle (\point pt);}
+
+\only<13->{\draw[\linetype, line width=0.3mm, <->, >={Latex[round]}] (endone)  -- (endtwo);}
+
+\only<14->{\fill [fill=black] (trypoint) circle (\point pt);}
+
+\only<15->{\node[anchor=\anchortry, inner sep=2pt, rotate=0] (label) at (trypoint) {$(\tryx, \tryy)$};}
+
+\only<22>{\fill[green, opacity=0.1] (endone) -- (cornerone) -- (cornertwo) -- (cornerthree) -- (endtwo) -- cycle;}
+

@@ -1,0 +1,40 @@
+\def \yintx {0}
+\def \yinty {1}
+\def \pointtwox {1}
+\def \pointtwoy {3}
+\def \endonex {-3}
+\def \endoney {-5}
+\def \endtwox {2}
+\def \endtwoy {5}
+\def \point {4}
+\def \tryx {0}
+\def \tryy {0}
+\def \anchortry {north west}
+\def \gridsize {5}
+\def \corneronex {\gridsize}
+\def \corneroney {-\gridsize}
+\def \cornertwox {\gridsize}
+\def \cornertwoy {\gridsize}
+
+\coordinate (endone) at (\endonex, \endoney);
+\coordinate (endtwo) at (\endtwox, \endtwoy);
+\coordinate (yint) at (\yintx, \yinty);
+\coordinate (pointtwo) at (\pointtwox, \pointtwoy);
+\coordinate (trypoint) at (\tryx, \tryy);
+\coordinate (cornerone) at (\corneronex, \corneroney);
+\coordinate (cornertwo) at (\cornertwox, \cornertwoy);
+
+\pause \fill [fill=black] (yint) circle (\point pt);
+
+\pause \fill [fill=black] (pointtwo) circle (\point pt);
+
+\pause \draw[line width=0.3mm, <->, >={Latex[round]}] (endone)  -- (endtwo);
+
+\pause \fill [fill=black] (trypoint) circle (\point pt);
+
+
+\pause \node[anchor=\anchortry, inner sep=2pt, rotate=0] (label) at (trypoint) {$(\tryx, \tryy)$};
+
+
+\only<17>{\fill[green, opacity=0.1] (endone) -- (cornerone) -- (cornertwo) -- (endtwo) -- cycle;}
+

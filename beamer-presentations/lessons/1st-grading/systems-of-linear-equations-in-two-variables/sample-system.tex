@@ -1,0 +1,69 @@
+\def \eqonexone {0}
+\def \eqoneyone {3}
+\def \eqonextwo {3}
+\def \eqoneytwo {0}
+
+\def \eqtwoxone {0}
+\def \eqtwoyone {-1}
+\def \eqtwoxtwo {1}
+\def \eqtwoytwo {0}
+
+\def \point {5}
+\def \eqonearrowlen {2}
+\def \eqtwoarrowlen {5}
+
+\def \solx {2}
+\def \soly {1}
+\def \anchor {west}
+\def \labxshift {5}
+\def \labyshift {0}
+
+\def \eqonefromx {-1}
+\def \eqonefromy {4}
+\def \eqonetox {5}
+\def \eqonetoy {6}
+\def \eqonefromanchor {north}
+\def \eqonetoanchor {west}
+\def \eqonefromangle {90}
+\def \eqonetoangle {180}
+\def \eqonename {$ x - y = 1 $}
+
+\def \eqtwofromx {-1}
+\def \eqtwofromy {-2}
+\def \eqtwotox {5}
+\def \eqtwotoy {-5}
+\def \eqtwofromanchor {south}
+\def \eqtwotoanchor {west}
+\def \eqtwofromangle {270}
+\def \eqtwotoangle {180}
+\def \eqtwoname {$ x + y = 3 $}
+
+
+\coordinate (a) at (\eqonexone, \eqoneyone);
+\coordinate (b) at (\eqonextwo, \eqoneytwo);
+\coordinate (c) at (\eqtwoxone, \eqtwoyone);
+\coordinate (d) at (\eqtwoxtwo, \eqtwoytwo);
+\coordinate (sol) at (\solx, \soly);
+\coordinate (eqonefrom) at (\eqonefromx, \eqonefromy);
+\coordinate (eqtwofrom) at (\eqtwofromx, \eqtwofromy);
+\coordinate (eqtwoto) at (\eqtwotox, \eqtwotoy);
+
+ \pause \draw[line width=0.3mm, <->, >={Latex[round]}] ($(b)!\eqonearrowlen!(a)$)  -- ($(a)!\eqonearrowlen!(b)$);
+ 
+ \node[main node] (eqonetopoint) at (\eqonetox, \eqonetoy) {\phantom{\eqonename}};
+ 
+ \pause \draw [->, >={Latex[round]}, green, line width=0.3mm] (eqonefrom.\eqonefromanchor) to [out=\eqonefromangle,in=\eqonetoangle] (eqonetopoint.\eqonetoanchor);
+ 
+ \pause \node[main node] (eqoneto) at (\eqonetox, \eqonetoy) {\eqonename};
+ 
+ \node[main node] (eqtwoto) at (\eqtwotox, \eqtwotoy) {\phantom{\eqtwoname}};
+ 
+  \pause \draw[line width=0.3mm, <->, >={Latex[round]}] ($(d)!\eqtwoarrowlen!(c)$)  -- ($(c)!\eqtwoarrowlen!(d)$);
+
+\pause \draw [->, >={Latex[round]}, blue, line width=0.3mm] (eqtwofrom.\eqtwofromanchor) to [out=\eqtwofromangle,in=\eqtwotoangle] (eqtwoto.\eqtwotoanchor);
+
+\pause \node[main node] (eqtwoto) at (\eqtwotox, \eqtwotoy) {\eqtwoname};
+
+\pause \fill [fill=black] (sol) circle (\point pt);
+
+\pause \node[anchor=\anchor, inner sep=2pt, rotate=0, xshift=\labxshift pt, yshift=\labyshift pt] (sol-label) at (sol) {$(\solx, \soly)$};

@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{What is FOSS?}{11}{0}{1}
+\beamer@sectionintoc {2}{Advantages of FOSS}{21}{0}{2}
+\beamer@sectionintoc {3}{FOSS for Office Stuff}{37}{0}{3}
+\beamer@sectionintoc {4}{FOSS for Multimedia}{109}{0}{4}
+\beamer@sectionintoc {5}{FOSS for Online Classes}{120}{0}{5}
+\beamer@sectionintoc {6}{FOSS for Test Correction}{143}{0}{6}

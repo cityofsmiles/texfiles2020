@@ -1,0 +1,71 @@
+I. What is FOSS?
+    A. Defining FOSS
+    1. Free and open-source software (FOSS) is software that can be classified as both free software and open-source software.[a] That is, anyone is freely licensed to use, copy, study, and change the software in any way, and the source code is openly shared so that people are encouraged to voluntarily improve the design of the software.[3] This is in contrast to proprietary software, where the software is under restrictive copyright licensing and the source code is usually hidden from the users. 
+    2. Free as in freedom of speech not as in free beer
+    3. Freedom to:
+        Run (freedom 0)
+        Study (freedom 1)
+        Redistribute copies (freedom 2
+        Modify/improvise (freedom 3)
+    B. Advantages of using FOSS
+    1. The availability of the source code and the right to modify
+    2. The right to use the software in any way
+    3. Core software is free
+    4. Evolving software
+    5. Encourages hands on
+    6. Not tied to a single vendor
+    7. Big community to support
+    8. Better security: Most malware is designed for the more popular proprietary software so open source is more secure
+    9. Reliability and stabilitys
+    
+II. Foss for Teachers
+    A. Office stuff
+        1. OS: Windows vs. Linux
+        1. Microsoft office vs. LibreOffice
+        2. Google sheet vs. EtherCalc
+        3. Google docs vs. Etherpad
+        4. Mathematical typesetting: LaTeX
+        5. Adobe Acrobat vs. Calibre
+        6. Google Drive vs. NextCloud
+        7. File converter: Pandoc
+	8. Web browser: Google Chrome vs. Mozilla Firefox
+    B. Multimedia
+        1. Audio editor: Audacity
+        2. Video Recording and Streaming: Open Broadcast Studio (OBS)
+            https://obsproject.com/
+        3. Video downloader: youtube-dl
+        4. Video editor: Blender, OpenShot, Shotcut
+        5. Photo editor
+    C. Virtual classroom/ online teaching
+        1. Virtual whiteboard: MyViewBoard vs. OpenBoard
+        2. Handwriting notetaking software: Xournal++
+            https://github.com/xournalpp/xournalpp
+        3. Web conferencing: Zoom/Google Meet vs. Jitsi Meet 
+        4. Messaging: Messenger vs. Telegram
+        5. 
+    D. Learning Management System
+        1. Moodle
+            http://www.moodle.org/
+
+Case against fb
+data privacy, mental health, misinformation/fake news, among others
+
+https://mb.com.ph/2020/08/19/case-against-facebook-use-in-education/
+
+https://www.gmanetwork.com/news/money/companies/753042/microsoft-s-software-alliance-says-64-of-companies-in-philippines-use-unlicensed-software/story/
+
+https://cnnphilippines.com/news/2020/8/4/PhilHealth-Ricardo-Morales-overpriced-IT-projects-corruption.html?fbclid=IwAR2t9HjNjCuzeXZWpIexCmBoJjzjA0sn2ubjnefsxj01uT-sYiY4WppUkuQ
+
+https://www.androidheadlines.com/2020/07/google-misled-users-over-privacy-issues-according-to-regulator.html
+
+https://www.cnet.com/news/google-alphabet-earnings-fourth-quarter-2018/
+
+https://businessmirror.com.ph/2020/09/04/the-advantages-of-using-linux/
+
+https://securityboulevard.com/2020/08/phishing-campaign-uses-internal-email-to-trick-employees-into-sharing-office-365-credentials/
+
+https://www.channelasia.tech/article/679771/supreme-court-philippines-rolls-microsoft-365-unveils-virtual-courtrooms/
+
+https://healthitsecurity.com/news/bec-phishing-campaigns-bypass-mfa-target-office-365-executive-accounts
+
+
