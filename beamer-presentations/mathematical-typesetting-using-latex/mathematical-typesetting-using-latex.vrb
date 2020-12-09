@@ -1,0 +1,14 @@
+\frametitle{What is the Document Class Command?}
+		
+		\lstinputlisting[linerange={1-1}]{sample-tex-file.tex}
+		
+		\begin{itemize}
+			\item Command:
+		\end{itemize}
+		
+	\end{frame}	
+
+    \begin{frame}
+    	\begin{center}
+    		\textbf{\LARGE Thank you!}
+    	\end{center}
