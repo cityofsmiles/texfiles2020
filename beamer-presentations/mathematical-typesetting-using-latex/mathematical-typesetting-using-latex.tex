@@ -15,8 +15,7 @@
 
 \lstdefinestyle{boxed}{
 	language=[LaTeX]TeX,
-	frame=single,
-	framesep=\fboxsep,
+	frame=single,	framesep=\fboxsep,
 	framerule=\fboxrule,
 	rulecolor=\color{red},
 	xleftmargin=\dimexpr\fboxsep+\fboxrule,
@@ -133,18 +132,26 @@
 			\end{minipage}
 			\item \pause Default packages in TeXstudio:
 			\begin{itemize}
-				\item \pause inputenc
-				\item \pause fontenc
-				\item \pause amsmath
-				\item \pause amsfonts
-				\item amssymb
-				\item graphicx
-				\item geometry
+				\item inputenc,
+				 fontenc,
+				 amsmath,
+				 amsfonts,
+				 amssymb,
+				 graphicx,
+				 geometry
 			\end{itemize}
+			
+			\item \pause Examples: \lstinputlisting[linerange={15-21}]{sample-tex-file.tex}
 		\end{itemize}
-		
 	\end{frame}	
 	
+	\begin{frame}
+		\frametitle{What is the Body?}
+		
+		\lstinputlisting[linerange={4-6}]{sample-tex-file.tex}
+		
+		It provides the document's visible content.
+	\end{frame}	
 
     \begin{frame}
     	\begin{center}
