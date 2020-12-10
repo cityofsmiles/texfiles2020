@@ -2,14 +2,19 @@
 \input{../beamer-preamble-2020}
 \usetheme{Boadilla}
 \usecolortheme{seahorse}
-\usepackage{verbatim}
+\usepackage{showexpl}
+\usepackage{tcolorbox}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{gensymb} % for degree symbol
+\usepackage{fourier} %for arc symbol
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\def \texfile {sample-tex-file.tex}
 
 \lstloadlanguages{[LaTeX]TeX}
 
@@ -48,6 +53,7 @@
 		\tableofcontents 
 	\end{frame}
 
+	\section{What is \LaTeX?}
     \begin{frame}
     	\frametitle{What is \LaTeX?}
     	\begin{itemize}
@@ -56,6 +62,7 @@
     	\end{itemize}
     \end{frame}	
 
+	\section{What are the Features of \LaTeX?}
 	\begin{frame}
 		\frametitle{What are the Features of \LaTeX?}
 		\footnotesize
@@ -67,7 +74,7 @@
 		\end{itemize}
 	\end{frame}	
 	
-
+	\section{What is the Structure of a \LaTeX\ file?}
 	\begin{frame}
 		\frametitle{What is the Structure of a \LaTeX\ file?}
 		Sample \LaTeX\ File
@@ -152,6 +159,43 @@
 		
 		It provides the document's visible content.
 	\end{frame}	
+
+	\begin{frame}
+		\frametitle{What is Our Expected Output during Hands-on?}
+		
+		\begin{center}
+			\href{/home/jonathan/Old-Docs/latex/20-21/beamer-presentations/mathematical-typesetting-using-latex/sample-quiz2.pdf}{Click here}
+		\end{center}
+		
+	\end{frame}	
+
+	\section{Basic \LaTeX\ Commands}
+	\begin{frame}
+		\frametitle{Basic \LaTeX\ Commands}
+		\LTXinputExample[rangeaccept=true, linerange={20-28},  numbers=none]{\texfile}
+		
+	\end{frame}
+
+	\section{Math Symbols and Notations}
+	\begin{frame}
+		\frametitle{Math Symbols and Notations}
+		\LTXinputExample[rangeaccept=true, linerange={30-46}, rframe=, pos=r,  numbers=none]{\texfile}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Math Symbols and Notations}
+		\LTXinputExample[rangeaccept=true, linerange={48-62},rframe=, pos=r,  numbers=none]{\texfile}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Math Symbols and Notations}
+		\LTXinputExample[rangeaccept=true, linerange={63-77},rframe=, pos=r,  numbers=none]{\texfile}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Math Symbols and Notations}
+		\LTXinputExample[rangeaccept=true, linerange={78-97},rframe=, pos=r,  numbers=none]{\texfile}
+	\end{frame}
 
     \begin{frame}
     	\begin{center}

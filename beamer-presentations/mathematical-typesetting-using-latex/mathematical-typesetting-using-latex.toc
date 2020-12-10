@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{What is \LaTeX ?}{3}{0}{1}
+\beamer@sectionintoc {2}{What are the Features of \LaTeX ?}{5}{0}{2}
+\beamer@sectionintoc {3}{What is the Structure of a \LaTeX \ file?}{9}{0}{3}
+\beamer@sectionintoc {4}{Basic \LaTeX \ Commands}{28}{0}{4}
+\beamer@sectionintoc {5}{Math Symbols and Notations}{29}{0}{5}
